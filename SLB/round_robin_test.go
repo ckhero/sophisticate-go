@@ -10,10 +10,10 @@ func TestRoundRobin(t *testing.T) {
 	nodes[0] = "0"
 	nodes[1] = "1"
 	nodes[2] = "2"
-	r := NewRoundRobin()
-	for i := 0; i < 10; i++ {
-		node := r.RoundRobin(nodes)
-
-		fmt.Println(node())
+	count := map[string]int{}
+	next := RoundRobin(nodes)
+	for i := 0; i < 1000; i++ {
+		count[next()]++
 	}
+	fmt.Println(count)
 }

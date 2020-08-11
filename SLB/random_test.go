@@ -23,3 +23,26 @@ func TestRandom(t *testing.T) {
 		fmt.Printf("key = %s; volume =%d \n", k, v)
 	}
 }
+
+func TestRandomWeight(t *testing.T) {
+	nodes := make(map[int]map[string]interface{})
+	nodes[0] = map[string]interface{}{
+		"ip": "0",
+		"weight": 5,
+	}
+	nodes[1] = map[string]interface{}{
+		"ip": "1",
+		"weight": 1,
+	}
+	nodes[2] = map[string]interface{}{
+		"ip": "2",
+		"weight": 4,
+	}
+
+	next := RandomWeight(nodes)
+	count := map[string]int{}
+	for i := 0; i < 10000; i++ {
+		count[next()]++
+	}
+	fmt.Printf("%#v", count)
+}
