@@ -1,6 +1,6 @@
 /**
 * @Author: 人从众[ckhero]
-* @Date: 2020/9/7 3:42 下午
+* @Date: 2020/9/10 4:17 下午
 * @Desc: a
  */
 
@@ -12,10 +12,8 @@ import (
 	"testing"
 )
 
-func TestQuickSort(t *testing.T) {
-	arr := []int{3,9,1}
-	fmt.Println(sort.QuickSort(arr))
+func TestInsertSort(t *testing.T) {
 	arr2 := []int{3,9,1,11,12,15}
-	sort.QuickSort2(arr2, 0, len(arr2) - 1)
+	sort.InsertSort(arr2)
 	fmt.Println(arr2)
 }
