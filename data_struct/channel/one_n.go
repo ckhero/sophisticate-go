@@ -16,18 +16,18 @@ func OneToN() {
 	wg.Add(10)
 	ch := make(chan int, 100)
 	go func() {
+		defer close(ch)
 		for i := 0; i < 100; i++ {
 			ch <- i
 		}
-		close(ch)
 	} ()
 	for i := 0; i < 10; i++ {
-		go func() {
+		go func(tmp int) {
 			defer wg.Done()
 			for v := range ch {
-				fmt.Printf("name: %d,no: %d \n", i, v)
+				fmt.Printf("name: %d,no: %d \n", tmp, v)
 			}
-		}()
+		}(i)
 	}
 
 	wg.Wait()

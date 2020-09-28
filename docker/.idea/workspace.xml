@@ -1,5 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="065b10d4-b628-4839-98eb-8f102878cf9d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/docker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handle/handle.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prometheus.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/route/route.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../other/memory_allot/memory_allot.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/list/detect_cycle/detect_cycle.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/detect_cycle/detect_cycle.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/list/detect_cycle/detect_cycle_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/detect_cycle/detect_cycle_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/list/has_cycle/has_cycle.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/has_cycle/has_cycle.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/list/intersection_node/intersection_node.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/intersection_node/intersection_node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/list/rand_node/rand_node.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/rand_node/rand_node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/list/rand_node/rand_node_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/rand_node/rand_node_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/list/reverse_list/reverse_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/reverse_list/reverse_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/list/reverse_list/reverse_list_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/reverse_list/reverse_list_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/list/reverse_print/reverse_print.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/reverse_print/reverse_print.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/list/reverse_print/reverse_print_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/reverse_print/reverse_print_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data_struct/channel/one_n.go" beforeDir="false" afterPath="$PROJECT_DIR$/../data_struct/channel/one_n.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data_struct/map/sort_map.go" beforeDir="false" afterPath="$PROJECT_DIR$/../data_struct/map/sort_map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data_struct/map/sort_map_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../data_struct/map/sort_map_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../other/ck_map/ck_map_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../other/ck_map/ck_map_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../other/memory_align/memory_align.go" beforeDir="false" afterPath="$PROJECT_DIR$/../other/memory_align/memory_align.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../other/plan9/pkg/main_amd64.s" beforeDir="false" afterPath="$PROJECT_DIR$/../other/plan9/main_amd64.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../other/plan9/plan9.go" beforeDir="false" afterPath="$PROJECT_DIR$/../other/plan9/plan9.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../other/plan9/plan9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../question/number++/number_plus.go" beforeDir="false" afterPath="$PROJECT_DIR$/../question/number++/number_plus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../question/number++/number_plus_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../question/number++/number_plus_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../question/pprof/pprof.go" beforeDir="false" afterPath="$PROJECT_DIR$/../question/pprof/pprof.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="GOROOT" path="$PROJECT_DIR$/../../go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -8,6 +49,12 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1hxZTLJ0BpdUK1xFODpczvTkNN0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -15,5 +62,12 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>direct</proxy>
   </component>
 </project>

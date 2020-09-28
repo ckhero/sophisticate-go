@@ -13,9 +13,9 @@ import (
 
 type SizeOfF struct {
 	A byte  // 1
-	B int64 // 8
+	B int32 // 8
 	C byte  // 1]
-	D string // 8
+	D int32 // 8
 }
 
 type SizeOfF2 struct {
@@ -39,4 +39,15 @@ func OptimizeMemory() {
 	fmt.Printf("B size: %d,align: %d, offset: %d \r\n", unsafe.Sizeof(SizeOfF2{}.B), unsafe.Alignof(SizeOfF2{}.B), unsafe.Offsetof(SizeOfF2{}.B))
 	fmt.Printf("C size: %d,align: %d, offset: %d \r\n", unsafe.Sizeof(SizeOfF2{}.C), unsafe.Alignof(SizeOfF2{}.C), unsafe.Offsetof(SizeOfF2{}.C))
 	fmt.Printf("D size: %d,align: %d, offset: %d \r\n", unsafe.Sizeof(SizeOfF2{}.D), unsafe.Alignof(SizeOfF2{}.D), unsafe.Offsetof(SizeOfF2{}.D))
+	fmt.Printf("size of fdsaa %d \n", unsafe.Sizeof("fdsaa"))
+	fmt.Printf("size of fdsaafdsaafdsaafdsaa %d \n", unsafe.Sizeof("fdsaafdsaafdsaafdsaa"))
+	fmt.Printf("size of int %d \n", unsafe.Sizeof(1))
+	fmt.Printf("size of int8 %d \n", unsafe.Sizeof(int8(1)))
+	fmt.Printf("size of int16 %d \n", unsafe.Sizeof(int16(1)))
+	fmt.Printf("size of int32 %d \n", unsafe.Sizeof(int32(1)))
+	fmt.Printf("size of int64 %d \n", unsafe.Sizeof(int64(1)))
+	fmt.Printf("size of true %d \n", unsafe.Sizeof(true))
+	fmt.Printf("size of byte %d \n", unsafe.Sizeof(byte(1)))
+	fmt.Printf("D size: %d,align: %d \r\n", unsafe.Sizeof(SizeOfF{}), unsafe.Alignof(SizeOfF{}))
+
 }

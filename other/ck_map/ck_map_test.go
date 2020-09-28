@@ -5,7 +5,6 @@ import "testing"
 func TestSortRange(t *testing.T) {
 
 
-	ch := make(chan)
 	data := make(map[string]interface{})
 	data["a"] = "fdasfasf"
 	data["b"] = "fdasfasf"

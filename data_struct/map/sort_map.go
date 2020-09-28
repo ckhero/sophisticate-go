@@ -60,3 +60,7 @@ func (e *Element) GetKey() string {
 func (e *Element) GetVal() string {
 return e.value
 }
+
+type KeyStruct struct {
+	a int
+}

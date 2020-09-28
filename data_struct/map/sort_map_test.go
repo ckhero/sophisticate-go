@@ -49,3 +49,11 @@ func TestSortedMap(t *testing.T) {
 	}
 	m.Walk(cb)
 }
+
+
+func TestKeyType(t *testing.T) {
+	m := make(map[KeyStruct]int)
+	key1 := KeyStruct{a:1}
+	m[key1] = 1
+	fmt.Println(m)
+}
