@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-service
+  namespace: cl-test
+  labels:
+    app: demo-service
+spec:
+  type: NodePort
+  ports:
+    - port: 1314
+      targetPort: 1314
+      protocol: TCP
+      name: http
+  selector:
+    app: demo-pod
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-deployment
+  namespace: cl-test
+spec:
+  selector:
+    matchLabels:
+      app: demo-pod
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: demo-pod
+    spec:
+      containers:
+        - name: demo-container
+          image: ckhero/go-test:tagname  #本地私有镜像库的镜像名称+版本
+          ports:
+            - containerPort: 1314
