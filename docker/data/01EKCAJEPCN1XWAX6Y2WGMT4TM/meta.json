@@ -1,0 +1,18 @@
+{
+	"ulid": "01EKCAJEPCN1XWAX6Y2WGMT4TM",
+	"minTime": 1601352000000,
+	"maxTime": 1601359200000,
+	"stats": {
+		"numSamples": 96960,
+		"numSeries": 202,
+		"numChunks": 808,
+		"numBytes": 268731
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01EKCAJEPCN1XWAX6Y2WGMT4TM"
+		]
+	},
+	"version": 1
+}
