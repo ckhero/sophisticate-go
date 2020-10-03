@@ -13,7 +13,7 @@ import (
 
 func TestInts_Iterator(t *testing.T) {
 	ints := Ints{1, 2, 3}
-	it := ints.Iterator()
+	it := ints.Next()
 	for {
 		if val, ok := it(); ok {
 			fmt.Println(val)

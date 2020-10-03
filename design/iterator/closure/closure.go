@@ -19,3 +19,16 @@ func(i Ints) Iterator() func() (int, bool) {
 		return val, true
 	}
 }
+
+
+func(i *Ints) Next() func() (int, bool) {
+	idx := 0
+	return func() (int, bool) {
+		if idx >= len(*i) {
+			return 0, false
+		}
+		res := (*i)[idx]
+		idx++
+		return res, true
+	}
+}
