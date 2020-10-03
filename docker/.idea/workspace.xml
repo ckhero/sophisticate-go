@@ -2,39 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="065b10d4-b628-4839-98eb-8f102878cf9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/docker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy1.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handle/handle.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/route/route.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../other/memory_allot/memory_allot.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../algorithm/list/detect_cycle/detect_cycle.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/detect_cycle/detect_cycle.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../algorithm/list/detect_cycle/detect_cycle_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/detect_cycle/detect_cycle_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../algorithm/list/has_cycle/has_cycle.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/has_cycle/has_cycle.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../algorithm/list/intersection_node/intersection_node.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/intersection_node/intersection_node.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../algorithm/list/rand_node/rand_node.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/rand_node/rand_node.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../algorithm/list/rand_node/rand_node_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/rand_node/rand_node_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../algorithm/list/reverse_list/reverse_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/reverse_list/reverse_list.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../algorithm/list/reverse_list/reverse_list_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/reverse_list/reverse_list_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../algorithm/list/reverse_print/reverse_print.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/reverse_print/reverse_print.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../algorithm/list/reverse_print/reverse_print_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/list/reverse_print/reverse_print_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_struct/channel/one_n.go" beforeDir="false" afterPath="$PROJECT_DIR$/../data_struct/channel/one_n.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_struct/map/sort_map.go" beforeDir="false" afterPath="$PROJECT_DIR$/../data_struct/map/sort_map.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_struct/map/sort_map_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../data_struct/map/sort_map_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../other/ck_map/ck_map_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../other/ck_map/ck_map_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../other/memory_align/memory_align.go" beforeDir="false" afterPath="$PROJECT_DIR$/../other/memory_align/memory_align.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../other/plan9/pkg/main_amd64.s" beforeDir="false" afterPath="$PROJECT_DIR$/../other/plan9/main_amd64.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../other/plan9/plan9.go" beforeDir="false" afterPath="$PROJECT_DIR$/../other/plan9/plan9.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../other/plan9/plan9.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../question/number++/number_plus.go" beforeDir="false" afterPath="$PROJECT_DIR$/../question/number++/number_plus.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../question/number++/number_plus_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../question/number++/number_plus_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../question/pprof/pprof.go" beforeDir="false" afterPath="$PROJECT_DIR$/../question/pprof/pprof.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKA5X5ZY42GBFR80Y1CRE1SP/chunks/000001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKA5X5ZY42GBFR80Y1CRE1SP/index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKA5X5ZY42GBFR80Y1CRE1SP/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKA5X5ZY42GBFR80Y1CRE1SP/tombstones" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKBWTZY79AW61HGADW759AJ6/chunks/000001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKBWTZY79AW61HGADW759AJ6/index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKBWTZY79AW61HGADW759AJ6/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKBWTZY79AW61HGADW759AJ6/tombstones" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKBWV1DNJR5H1JSXRH5XR6Q3/chunks/000001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKBWV1DNJR5H1JSXRH5XR6Q3/index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKBWV1DNJR5H1JSXRH5XR6Q3/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKBWV1DNJR5H1JSXRH5XR6Q3/tombstones" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKC3PQAA4GDRW7K60ZCKFETF/chunks/000001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKC3PQAA4GDRW7K60ZCKFETF/index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKC3PQAA4GDRW7K60ZCKFETF/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKC3PQAA4GDRW7K60ZCKFETF/tombstones" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKCAJEPCN1XWAX6Y2WGMT4TM/chunks/000001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKCAJEPCN1XWAX6Y2WGMT4TM/index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKCAJEPCN1XWAX6Y2WGMT4TM/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01EKCAJEPCN1XWAX6Y2WGMT4TM/tombstones" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK8ZN01XZYD8H5F4K9WXFV02/chunks/000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK8ZN01XZYD8H5F4K9WXFV02/index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK8ZN01XZYD8H5F4K9WXFV02/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK8ZN01XZYD8H5F4K9WXFV02/tombstones" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9AE7E0MH3XS1H9DPJ7KJ8Z/chunks/000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9AE7E0MH3XS1H9DPJ7KJ8Z/index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9AE7E0MH3XS1H9DPJ7KJ8Z/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9AE7E0MH3XS1H9DPJ7KJ8Z/tombstones" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9AE89196WYAYPV5X981XVY/chunks/000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9AE89196WYAYPV5X981XVY/index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9AE89196WYAYPV5X981XVY/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9AE89196WYAYPV5X981XVY/tombstones" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9H9YTEE4Y4S14D3DZV42V2/chunks/000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9H9YTEE4Y4S14D3DZV42V2/index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9H9YTEE4Y4S14D3DZV42V2/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9H9YTEE4Y4S14D3DZV42V2/tombstones" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9R5P6KEW564K0J54BFGHVR/chunks/000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9R5P6KEW564K0J54BFGHVR/index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9R5P6KEW564K0J54BFGHVR/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/01EK9R5P6KEW564K0J54BFGHVR/tombstones" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wal/00000000" beforeDir="false" afterPath="$PROJECT_DIR$/data/wal/00000000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route/route.go" beforeDir="false" afterPath="$PROJECT_DIR$/route/route.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +61,16 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1hxZTLJ0BpdUK1xFODpczvTkNN0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
@@ -65,6 +80,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

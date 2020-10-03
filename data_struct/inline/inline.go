@@ -1,21 +1,16 @@
-package t_test
-
-import "testing"
+package main
 
 /**
 内联
-go build -gcflags=-m=2 inline_test.go
+go build -gcflags=-m=2 inline.go
  */
 
 func main()  {
 
 }
-
+//go:noinline
 func Small(a, b int) int{
 	return a + b
-}
-func BenchmarkSmall(b testing.B) {
-	Small()
 }
 func large() string {
 	a := "a"
