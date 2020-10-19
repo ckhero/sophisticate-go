@@ -1,32 +1,42 @@
 package main
 
 import (
-	"errors"
 	"fmt"
-	"golang.org/x/sync/singleflight"
-	"main/design/chain"
-	"time"
+	_ "github.com/micro/go-plugins/broker/kafka/v2"
+	_ "main/SLB"
 )
 
-func main()  {
-	var g singleflight.Group
-	for i :=0; i < 2; i ++  {
-		go func() {
-			v,err, s :=g.Do("test", func() (i interface{}, err error) {
-				fmt.Println("dsf")
-				return "aaaa", errors.New("error")
-			})
-			fmt.Println(v,err,s)
-		}()
-	}
+func init() {
 
-	time.Sleep(time.Second)
-	v1 := chain.NewTeacher()
-	v2 := chain.NewHeadermaster()
-	v1.SetNext(v2)
-	v := v1
-	v.Exec(1)
-	v.Exec(3)
-	v.Exec(2)
-	v.Exec(4)
+	fmt.Println("main",1)
 }
+func main()  {
+}
+
+//func pub() {
+//	tick := time.NewTicker(time.Second)
+//	for _ = range tick.C {
+//		msg := &broker.Message{
+//			Header: map[string]string{
+//				"id": fmt.Sprintf("%d", i),
+//			},
+//			Body: []byte(fmt.Sprintf("%d: %s", i, time.Now().String())),
+//		}
+//		if err := broker.Publish(topic, msg); err != nil {
+//			log.Printf("[pub] failed: %v", err)
+//		} else {
+//			fmt.Println("[pub] pubbed message:", string(msg.Body))
+//		}
+//		i++
+//	}
+//}
+//
+//func sub() {
+//	_, err := broker.Subscribe(topic, func(p broker.Event) error {
+//		fmt.Println("[sub] received message:", string(p.Message().Body), "header", p.Message().Header)
+//		return nil
+//	})
+//	if err != nil {
+//		fmt.Println(err)
+//	}
+//}

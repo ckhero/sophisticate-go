@@ -6,7 +6,16 @@ import (
 	"time"
 )
 
+func Test(i int)  {
+	fmt.Println(i)
+}
 func main()  {
+	Test4()
+	fmt.Println(three())
+	fmt.Println(two())
+	i := 2
+	defer Test(i)
+	i = 3
 	defer fmt.Println("defer main")
 	var user = os.Getenv("USER_")
 
@@ -47,11 +56,11 @@ func one() {
 	}
 }
 
-func two() (r int) {
+func two() ( int) {
 	t := 5
 	defer func() {
 		t = t + 5
-		fmt.Println(t)
+		fmt.Printf("two %d \n", t)
 	}()
 	return t
 }
@@ -59,7 +68,33 @@ func two() (r int) {
 func three() (r int) {
 	defer func(r int) {
 		r = r + 5
-		fmt.Println(r)
+		fmt.Printf("three%d \n", r)
 	}(r)
 	return 1
+}
+
+func Test4() {
+	fmt.Println(DeferFunc1(1))
+	fmt.Println(DeferFunc2(1))
+	fmt.Println(DeferFunc3(1))
+}
+func DeferFunc1(i int)(t int) {
+	t = i
+	defer func() {
+		t += 3
+	}()
+	return t
+}
+func DeferFunc2(i int) int {
+	t := i
+	defer func() {
+		t += 3
+	}()
+	return t
+}
+func DeferFunc3(i int)(t int) {
+	defer func() {
+		t += i
+	}()
+	return 2
 }

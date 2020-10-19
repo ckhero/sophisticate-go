@@ -1,10 +1,14 @@
 package SLB
 
 import (
+	"fmt"
 	"math/rand"
 	"time"
 )
 
+func init() {
+	fmt.Println("SLB")
+}
 func Random(nodes map[int]string) string {
 	rand.Int()
 	r := rand.New(rand.NewSource(getRandomSeek()))

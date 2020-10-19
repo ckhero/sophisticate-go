@@ -1,6 +1,7 @@
 package _map
 
 import (
+	"encoding/json"
 	"fmt"
 	"sort"
 	"testing"
@@ -56,4 +57,16 @@ func TestKeyType(t *testing.T) {
 	key1 := KeyStruct{a:1}
 	m[key1] = 1
 	fmt.Println(m)
+}
+
+func TestCopy(t *testing.T) {
+	m := make(map[string]int)
+	m["a"] = 111
+	data,_ := json.Marshal(m)
+	m2 := make(map[string]int)
+	_ = json.Unmarshal(data, &m2)
+	fmt.Println(m2)
+	m2["a"] = 2222
+	fmt.Println(m)
+	fmt.Println(m2)
 }

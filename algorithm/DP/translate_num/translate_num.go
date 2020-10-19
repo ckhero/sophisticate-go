@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strconv"
+	"unsafe"
 )
 
 /**
@@ -25,14 +26,30 @@ https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/
 通过次数49,373提交次数91,485
  */
 
+//go:noinline
+func Test() *chan int{
+	a := make(chan int, 1)
 
+	return &a
+}
+
+type TestNew struct {
+	a string
+	b int
+}
 func main() {
+	bytes := []byte{104, 101, 108, 108, 111}
+
+	p := unsafe.Pointer(&bytes) //强制转换成unsafe.Pointer，编译器不会报错
+	str := *(*string)(p) //然后强制转换成string类型的指针，再将这个指针的值当做string类型取出来
+	fmt.Println(str) //输出
 	//fmt.Println(translateNum(12258))
-	fmt.Println(TranslateNum(1068385902))
-	fmt.Println(TranslateNum2(1068385902))
+	//fmt.Println(TranslateNum(1068385902))
+	//fmt.Println(TranslateNum2(1068385902))
 }
 
 func TranslateNum(num int) int {
+
 	nums := strconv.Itoa(num)
 	dp := make([]int, 1)
 	dp[0] = 1

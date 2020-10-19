@@ -8,11 +8,21 @@ package slice
 
 import (
 	"fmt"
+	"strconv"
 	"testing"
+	"time"
 )
 
 func TestAppend(t *testing.T) {
-	a := []int{1, 2, 3}
+	i :=1
+	i++
+	fmt.Println(time.Now().Format("2006-01-02 15:04:05"))
+	fmt.Println(strconv.Itoa(100))
+	fmt.Println(strconv.FormatInt(100, 10))
+	c := [3]int{1, 2, 3}
+	cc := c[:]
+	cc = append(cc, 1)
+	a := []int{1, 2, 3,}
 	b := a[2:]
 	fmt.Println(a)
 	fmt.Println(b)
@@ -29,7 +39,6 @@ func TestAppend(t *testing.T) {
 	fmt.Println(b)
 	fmt.Println(cap(a))
 	fmt.Println(cap(b))
-
 }
 
 func TestDilatation(t *testing.T) {
@@ -52,4 +61,13 @@ func TestCreateSlice(t *testing.T) {
 	fmt.Println(cap(a))
 	fmt.Println(cap(b))
 	fmt.Println(cap(c))
+}
+
+func TestCopy(t *testing.T) {
+	a := []int{1,2,3}
+	b := make([]int, 4)
+	copy(b, a)
+	a[0] = 2
+	fmt.Println(a)
+	fmt.Println(b)
 }
