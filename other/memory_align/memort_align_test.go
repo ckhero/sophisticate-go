@@ -6,8 +6,14 @@
 
 package memory_align
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+	"unsafe"
+)
 
 func TestOptimizeMemory(t *testing.T) {
-	OptimizeMemory()
+	//OptimizeMemory()
+	fmt.Println(unsafe.Sizeof(Test1{}))
+	fmt.Println(unsafe.Sizeof(Test2{}))
 }

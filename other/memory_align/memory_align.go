@@ -25,6 +25,20 @@ type SizeOfF2 struct {
 	D string // 8
 }
 
+
+type Test1 struct {
+	A bool
+	B int8
+	C string
+}
+
+type Test2 struct {
+	AB bool
+	B string
+	C int8
+}
+
+
 func OptimizeMemory() {
 	fmt.Println("-----SizeOfF------")
 	fmt.Println("")
