@@ -1,12 +1,62 @@
-package _map
+package main
 
-import "container/list"
+import (
+	"container/list"
+	"context"
+	"fmt"
+)
 
 type Keyer interface {
 	GetKey() string
 	GetVal() string
 }
 
+func main() {
+	defer func() {
+		if e := recover(); e !=nil {
+			fmt.Println(e)
+		}
+	}()
+	TestPanic1()
+	//TestWRPanic()
+}
+
+func TestPanic1() {
+
+	go TestPanic2()
+	panic("22222")
+}
+func TestPanic2() {
+	defer func() {
+		if e := recover(); e !=nil {
+			fmt.Println(2, e)
+		}
+	}()
+	panic("22222")
+}
+
+func TestWRPanic()  {
+	defer func() {
+		if e := recover(); e !=nil {
+			fmt.Println("catch it 2", e)
+		}
+	}()
+	s := map[int]int{}
+	for i :=0;  i < 20; i++ {
+		go func(t int) {
+			defer func() {
+				if e := recover(); e !=nil {
+					fmt.Println("catch it", e)
+				}
+			}()
+			if t % 10 != 0 {
+				s[0] = 2
+			} else {
+				_ = s[0]
+			}
+		}(i)
+	}
+}
 type MapList struct {
 	dataMap map[string]*list.Element
 	dataList  *list.List

@@ -4,10 +4,11 @@
 * @Desc: a
  */
 
-package slice
+package main
 
 import (
 	"bytes"
+	"fmt"
 	"testing"
 )
 
@@ -83,5 +84,18 @@ func BenchmarkAppend(b *testing.B) {
 		aa := make([]byte, len(src))
 		copy(aa, src)
 
+	}
+}
+
+func TestWRPanic(t *testing.T) {
+	s := []int{1,2,3}
+	for i :=0;  i < 1000; i++ {
+		go func(t int) {
+			if t % 10 == 0 {
+				s[0] = 2
+			} else {
+				fmt.Println(s[0])
+			}
+		}(i)
 	}
 }
