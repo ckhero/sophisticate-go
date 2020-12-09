@@ -14,6 +14,7 @@ import (
 	"github.com/anaskhan96/go-password-encoder"
 	jsoniter "github.com/json-iterator/go"
 	"github.com/json-iterator/go/extra"
+	"reflect"
 
 	//"github.com/json-iterator/go/extra"
 )
@@ -27,7 +28,16 @@ type StdStruct struct {
 type StdStruct2 struct {
 	Age string `json:"age"`
 }
+
+
 func main() {
+	jsonStr  := []byte(`{"age":1}`)
+	var val map[string]interface{}
+	json.Unmarshal(jsonStr, &val)
+	fmt.Println(reflect.TypeOf(val["age"]))
+
+	age := val["age"]
+	fmt.Println(reflect.TypeOf(age))
 	fmt.Println(hashPassword("18801613198"))
 	// Using the default options
 	salt, encodedPwd := password.Encode("generic password", nil)
