@@ -99,3 +99,26 @@ func TestWRPanic(t *testing.T) {
 		}(i)
 	}
 }
+
+type Test struct {
+	Name string
+}
+
+func TestList(t *testing.T) {
+
+	list := []*Test{&Test{Name:"22222"},&Test{Name:"3333"}}
+	list2 := []string{}
+	for _, test := range list {
+		fmt.Println(&test)
+		fmt.Println(test.Name)
+		list2 = append(list2, test.Name)
+		test.Name = test.Name + "asdfaaf"
+
+	}
+	for _, a := range list {
+		fmt.Println(a.Name)
+	}
+	fmt.Println(list)
+	fmt.Println(list2)
+
+}

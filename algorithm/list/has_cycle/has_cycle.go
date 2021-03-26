@@ -1,4 +1,4 @@
-package has_cycle
+	package has_cycle
 
 /**
 https://leetcode-cn.com/problems/linked-list-cycle/
